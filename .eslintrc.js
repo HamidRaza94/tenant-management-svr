@@ -58,5 +58,4 @@ module.exports = {
     ],
     "object-curly-newline": ["error", { "consistent": true }]
   }
-
 };

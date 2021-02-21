@@ -46,6 +46,7 @@ class Server {
     const { port, env } = this.config;
 
     const svr = this.app.listen(port, () => {
+      // eslint-disable-next-line no-console
       console.info(`server started on port ${port} (${env})`);
     });
 
