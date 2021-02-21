@@ -1,0 +1,19 @@
+{
+  "name": "tenant-management-svr",
+  "version": "1.0.0",
+  "description": "Tenant Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --forceExit --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamidRaza94/tenant-management-svr.git"
+  },
+  "author": "Mohammad Hamid Raza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamidRaza94/tenant-management-svr/issues"
+  },
+  "homepage": "https://github.com/HamidRaza94/tenant-management-svr#readme"
+}
