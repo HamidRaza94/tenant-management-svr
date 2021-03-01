@@ -130,20 +130,20 @@ class Server {
    * Lets you to enable cors
    */
   initCors() {
-    const corsOptions = {
-      methods: 'GET,POST,OPTIONS',
-      origin: (origin, callback) => {
-        if (this.config.corsOrigin.indexOf(origin) !== -1) {
-          callback(null, origin);
-        } else {
-          callback(new Error('Not allowed by CORS'))
-        }
-      },
-      optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    }
+    // const corsOptions = {
+    //   methods: 'GET,POST,OPTIONS',
+    //   origin: (origin, callback) => {
+    //     if (this.config.corsOrigin.indexOf(origin) !== -1) {
+    //       callback(null, origin);
+    //     } else {
+    //       callback(new Error('Not allowed by CORS'))
+    //     }
+    //   },
+    //   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    // }
 
-    this.app.use(cors(corsOptions));
-    this.app.use(corsNoResponse)
+    // this.app.use(cors(corsOptions));
+    // this.app.use(corsNoResponse)
   }
 
   /**
