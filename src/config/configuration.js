@@ -12,4 +12,6 @@ const configuration = Object.freeze({
   port: envVars.PORT || 9000,
 });
 
+console.log('configuration =>', configuration);
+
 export default configuration;
